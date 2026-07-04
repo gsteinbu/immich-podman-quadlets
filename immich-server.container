@@ -14,7 +14,7 @@ Environment=DB_DATABASE_NAME=immich
 Environment=DB_HOSTNAME=localhost
 Environment=REDIS_HOSTNAME=localhost
 #AddDevice=/dev/dri
-Secret=imich_db_password,type=env,target=DB_PASSWORD
+Secret=immich_db_password,type=env,target=DB_PASSWORD
 
 [Service]
 TimeoutStartSec=900
