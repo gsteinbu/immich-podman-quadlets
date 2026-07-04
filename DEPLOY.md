@@ -7,7 +7,7 @@ The deployment script will
 - put the files in the search path for quadlets.
 
 ```shell
-. ./deploy.sh
+. ./imich/deploy.sh
 ```
 
 Then start the pod via
