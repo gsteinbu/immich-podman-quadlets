@@ -21,3 +21,17 @@ You can check if all containers are up via
 ```shell
 systemctl --user list-units | grep immich
 ```
+
+## Start at boot
+
+You need to tell the server to spin up your user systemd instance at boot:
+
+```shell
+loginctl enable-linger
+```
+
+To ensure the service starts on boot, you need to enable it:
+
+```shell
+systemctl --user enable immich-pod
+```
