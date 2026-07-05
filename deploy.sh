@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
 if podman secret exists imich_db_password; then
-    echo "Secret 'imich_db_password' already exists."
+    echo "Secret 'immich_db_password' already exists."
 else
-    echo "Secret not found. Please enter the password for imich_db_password:"
-    systemd-ask-password | podman secret create imich_db_password -
+    echo "Secret not found. Please enter the password for immich_db_password:"
+    systemd-ask-password | podman secret create immich_db_password -
 fi
 
 export DB_DATA_LOCATION="$HOME/immich/db"
