@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-if podman secret exists imich_db_password; then
+if podman secret exists immich_db_password; then
     echo "Secret 'immich_db_password' already exists."
 else
     echo "Secret not found. Please enter the password for immich_db_password:"

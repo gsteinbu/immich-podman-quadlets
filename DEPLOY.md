@@ -22,6 +22,11 @@ You can check if all containers are up via
 systemctl --user list-units | grep immich
 ```
 
+## Enable Machine Learning
+
+You need to change the machine learning URL in the admin settings to http://localhost:3003 in order for it to work. See [README.md](README.md).
+
+
 ## Start at boot
 
 You need to tell the server to spin up your user systemd instance at boot:
