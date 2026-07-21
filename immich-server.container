@@ -3,7 +3,7 @@ Description=Immich Server
 Requires=immich-redis.container immich-database.container
 
 [Container]
-#AutoUpdate=registry
+AutoUpdate=registry
 Pod=immich.pod
 Image=ghcr.io/immich-app/immich-server:${IMMICH_VERSION}
 Volume=${UPLOAD_LOCATION}:/data:z
